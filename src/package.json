@@ -1,0 +1,22 @@
+{
+  "name": "gym",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toulousetom/gym.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toulousetom/gym/issues"
+  },
+  "homepage": "https://github.com/toulousetom/gym#readme",
+  "dependencies": {
+    "ws": "^7.5.3"
+  }
+}
