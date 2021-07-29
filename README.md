@@ -49,17 +49,17 @@ This code creates an html widget that contains the websocket server. Note that t
 
 ```brightscript
 serverWidget = CreateObject ("roHtmlWidget", CreateObject("roRectangle", 0, 0, 1, 1), {
-	brightsign_js_objects_enabled: true,
-	inspector_server: { port: 3000 },
-	nodejs_enabled: true,
-	url: "file:/server/index.html"
+    brightsign_js_objects_enabled: true,
+    inspector_server: { port: 3000 },
+    nodejs_enabled: true,
+    url: "file:/server/index.html"
 })
 
 print "type serverWidget", type(serverWidget)
 if type(serverWidget) <> "roHtmlWidget"
-	print "ERROR - Failed to create http widget for server"
-	Sleep(5)
-	Reboot()
+    print "ERROR - Failed to create http widget for server"
+    Sleep(5)
+    Reboot()
 end if
 
 serverWidget.Show()
