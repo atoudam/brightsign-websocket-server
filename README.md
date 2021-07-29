@@ -1,6 +1,8 @@
 # brightsign websocket server
  Websocket server that runs in a roHtmlWidget
  
+ # 1. HTML / Javascript server
+ 
 The html code to be hosted in the roHtmlWidget:
  
 ```html
@@ -39,7 +41,7 @@ The html code to be hosted in the roHtmlWidget:
 </html>
 ```
 
-The creation of the widget:
+# 2. autorun.brs BrightScript Widget
 
 ```brightscript
 serverWidget = CreateObject ("roHtmlWidget", CreateObject("roRectangle", 0, 0, 1, 1), {
