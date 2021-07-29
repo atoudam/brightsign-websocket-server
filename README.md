@@ -65,7 +65,7 @@ end if
 serverWidget.Show()
 ```
 
-# 3. websocket client
+# 3. WebSocket Client
 
 This code creates javascript function object that manages a connection to the above websocket server. This example client connects over the local network to a server running on a brightsign with local ip address '192.168.123.198'.
 
