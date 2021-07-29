@@ -77,7 +77,7 @@ socket.connect () :  creates and connects the websocket. In this case the method
 
 socket.send (message) : sends a message to the server. The message should be of type object.
 
-The 'socket' has a private function that delivers preprocessed messages to the client application:
+The 'socket' delivers preprocessed messages to the client application through a function attached to the 'WebSocket':
 
 socket.websocket.onmessage (event) : Receives messages from the server and processes them into javascript objects. These messages are sent to an function external to the 'socket' object (in this case handleEvent) in order to apply state changes to the client.
 
