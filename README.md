@@ -1,7 +1,7 @@
 # brightsign websocket server
  Websocket server that runs in a roHtmlWidget
  
- Here is an example of connecting from a 
+The html code to be hosted in the roHtmlWidget:
  
 ```html
 <!DOCTYPE html>
@@ -37,6 +37,26 @@
 </body>
 
 </html>
+```
+
+The creation of the widget:
+
+```brightscript
+serverWidget = CreateObject ("roHtmlWidget", CreateObject("roRectangle", 0, 0, 1, 1), {
+		brightsign_js_objects_enabled: true,
+		inspector_server: { port: 3000 },
+		nodejs_enabled: true,
+		url: "file:/server/index.html"
+	})
+
+	print "type serverWidget", type(serverWidget)
+	if type(serverWidget) <> "roHtmlWidget"
+		print "ERROR - Failed to create http widget for server"
+		Sleep(5)
+		Reboot()
+	end if
+
+	serverWidget.Show()
 ```
 
 ```javascript
